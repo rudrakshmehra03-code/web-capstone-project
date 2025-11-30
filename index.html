@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieHub - Food Delivery App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">Foodie<span>Hub</span></div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="#" class="btn btn-outline">Log in</a>
+          <a href="#" class="btn btn-primary">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="badge">Fast • Fresh • Delivered</p>
+            <h1>Delicious food, delivered to your door</h1>
+            <p class="hero-subtitle">
+              Order from your favorite local restaurants and get your meals
+              delivered hot and on time. Browse by category, explore top-rated
+              places, and enjoy exclusive offers.
+            </p>
+            <form class="hero-search" aria-label="Search food or restaurants">
+              <input
+                type="text"
+                placeholder="Search for dishes or restaurants"
+                required
+              />
+              <select aria-label="Select food category">
+                <option>All categories</option>
+                <option>Pizza</option>
+                <option>Burgers</option>
+                <option>Indian</option>
+                <option>Desserts</option>
+              </select>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            <p class="hero-meta">
+              No minimum order • Live order tracking • Secure payments
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./hero-food.avif"
+              alt="Assorted food items like burgers, salads and fries on a table"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section id="categories" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Browse by Category</h2>
+            <p>Find the perfect meal for every mood.</p>
+          </header>
+          <div class="grid categories-grid">
+            <article class="category-card">
+              <img src="./pizza.jpg" alt="Fresh cheese pizza" />
+              <h3>Pizza</h3>
+              <p>Cheesy, crispy and loaded with toppings.</p>
+            </article>
+            <article class="category-card">
+              <img src="burger.jpg" alt="Juicy burger with fries" />
+              <h3>Burgers</h3>
+              <p>Stacked patties, fresh veggies and soft buns.</p>
+            </article>
+            <article class="category-card">
+              <img src="indian.jpg" alt="Indian thali with curry and rice" />
+              <h3>Indian</h3>
+              <p>Spicy curries, biryanis and classic comfort food.</p>
+            </article>
+            <article class="category-card">
+              <img
+                src="dessert.png"
+                alt="Dessert plate with cake and berries"
+              />
+              <h3>Desserts</h3>
+              <p>Sweet treats to finish every meal.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Restaurants Section -->
+      <section id="restaurants" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>Featured Restaurants</h2>
+            <p>Top-rated places delivering near you.</p>
+          </header>
+
+          <div class="filters" aria-label="Filter restaurants (visual only)">
+            <button class="chip chip-active" type="button">All</button>
+            <button class="chip" type="button">Fast delivery</button>
+            <button class="chip" type="button">4.5★ & above</button>
+            <button class="chip" type="button">Offers</button>
+          </div>
+
+          <div class="grid restaurant-grid">
+            <article class="restaurant-card">
+              <img src="./rest-2.avif" alt="Burger House restaurant banner" />
+              <div class="restaurant-body">
+                <h3>Burger House</h3>
+                <p class="restaurant-tags">Burgers • Fast Food • Beverages</p>
+                <div class="restaurant-meta">
+                  <span>⭐ 4.6</span>
+                  <span>30–40 mins</span>
+                  <span>₹150 for one</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <img src="rest-1.jpeg" alt="Cheesy Slice Pizzeria banner" />
+              <div class="restaurant-body">
+                <h3>Cheesy Slice Pizzeria</h3>
+                <p class="restaurant-tags">Pizza • Italian • Sides</p>
+                <div class="restaurant-meta">
+                  <span>⭐ 4.8</span>
+                  <span>25–35 mins</span>
+                  <span>₹200 for one</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <img src="rest-4.avif" alt="Spice Route Indian Kitchen banner" />
+              <div class="restaurant-body">
+                <h3>Spice Route Kitchen</h3>
+                <p class="restaurant-tags">North Indian • Thali • Biryani</p>
+                <div class="restaurant-meta">
+                  <span>⭐ 4.5</span>
+                  <span>35–45 mins</span>
+                  <span>₹180 for one</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo Offers Section -->
+      <section id="offers" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Promo Offers</h2>
+            <p>Save more on every order.</p>
+          </header>
+          <div class="grid offers-grid">
+            <article class="offer-card">
+              <h3>Flat 30% OFF</h3>
+              <p>
+                On your first three orders. Use code <strong>WELCOME30</strong>.
+              </p>
+            </article>
+            <article class="offer-card">
+              <h3>Free Delivery</h3>
+              <p>For orders above ₹399 from selected restaurants.</p>
+            </article>
+            <article class="offer-card">
+              <h3>Weekend Combos</h3>
+              <p>Special prices on family meals every Friday–Sunday.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>What Our Customers Say</h2>
+          </header>
+          <div class="grid testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                “FoodieHub makes ordering dinner after work so easy. The
+                tracking and delivery time are always accurate.”
+              </p>
+              <h3>Riya Sharma</h3>
+              <p class="small-text">Regular customer</p>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                “Love the number of options available near me. I always find
+                something new to try on weekends.”
+              </p>
+              <h3>Aman Gupta</h3>
+              <p class="small-text">Food explorer</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Newsletter Section -->
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div>
+            <header class="section-header left">
+              <h2>Stay Updated</h2>
+              <p>Get updates on new restaurants, offers and seasonal menus.</p>
+            </header>
+            <ul class="contact-list">
+              <li>📍 Based in Your City</li>
+              <li>📞 +91-90000-00000</li>
+              <li>✉️ support@foodiehub.app</li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Tell us what you think"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary full-width">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 FoodieHub. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#" aria-label="Visit our social media profile">Social</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
